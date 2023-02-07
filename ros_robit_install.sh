@@ -19,7 +19,7 @@ echo ""
 echo ""
 
 echo "[RO:BIT] install curl"
-sudo apt install curl
+sudo apt -y install curl
 echo ""
 echo ""
 echo ""
@@ -40,21 +40,21 @@ echo ""
 echo ""
 
 echo "[RO:BIT] installing ROS-melodic-desktop-full"
-sudo apt install ros-melodic-desktop-full
+sudo apt install -y ros-melodic-desktop-full
 echo ""
 echo ""
 echo ""
 echo ""
 
 echo "[RO:BIT] installing dependencies"
-sudo apt install python-catkin-tools
+sudo apt install -y python-catkin-tools
 echo ""
 echo ""
 echo ""
 echo ""
 
 echo "[RO:BIT] installing git"
-sudo apt install git
+sudo apt install -y git
 echo ""
 echo ""
 echo ""
@@ -77,9 +77,9 @@ echo ""
 echo ""
 
 echo "[RO:BIT] installing Dependencies for building packages"
-sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool
+sudo apt install -y python-rosdep python-rosinstall python-rosinstall-generator python-wstool
 build-essential
-sudo apt install python-rosdep
+sudo apt install -y python-rosdep
 sudo rosdep init
 sudo rosdep update
 echo ""
