@@ -60,9 +60,6 @@ echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] installing rqt_plugins"
-sudo apt install -y ros-melodic-rqt
-
 echo "[RO:BIT] adding alias"
 sh -c "echo \"alias eb='nano ~/.bashrc'\" >> ~/.bashrc"
 sh -c "echo \"alias sb='source ~/.bashrc'\" >> ~/.bashrc"
@@ -100,10 +97,6 @@ echo "[RO:BIT] making catkin_workspace"
 mkdir catkin_ws
 cd catkin_ws
 mkdir src
-cd src
-catkin_init_workspace
-cd ..
-catkin_make
 echo ""
 echo ""
 echo ""
