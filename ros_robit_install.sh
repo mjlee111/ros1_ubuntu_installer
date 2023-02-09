@@ -105,8 +105,8 @@ echo ""
 echo ""
 echo ""
 
-echo -e "\033[40;31m[RO:BIT] rebooting\033[0m"
-sudo reboot
+#echo -e "\033[40;31m[RO:BIT] rebooting\033[0m"
+#sudo reboot
 exit 0
 
 
