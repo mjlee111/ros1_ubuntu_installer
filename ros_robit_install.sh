@@ -1,66 +1,67 @@
-echo "[NOTE] ROS_installer_robit_17th_myeungjin"
+echo -e "\033[40;31m[NOTE] ROS_installer_robit_17th_myeungjin\033[0m"
+echo -e "\033[40;31m[NOTE] ROS_installer_robit_17th_myeungjin\033[0m"
 echo ""
 echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] updating package lists"
+echo -e "\033[40;31m[RO:BIT] updating package lists\033[0m"
 sudo apt update -y
 echo ""
 echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] echo ros resources"
+echo -e "\033[40;31m[RO:BIT] echo ros resources\033[0m"
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 echo ""
 echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] install curl"
+echo -e "\033[40;31m[RO:BIT] install curl\033[0m"
 sudo apt -y install curl
 echo ""
 echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] adding key"
+echo -e "\033[40;31m[RO:BIT] adding key\033[0m"
 curl –s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 echo ""
 echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] updating"
+echo -e "\033[40;31m[RO:BIT] updating\033[0m"
 sudo apt update -y
 echo ""
 echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] installing ROS-melodic-desktop-full"
+echo -e "\033[40;31m[RO:BIT] installing ROS-melodic-desktop-full\033[0m"
 sudo apt install -y ros-melodic-desktop-full
 echo ""
 echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] installing dependencies"
+echo -e "\033[40;31m[RO:BIT] installing dependencies\033[0m"
 sudo apt install -y python-catkin-tools
 echo ""
 echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] installing git"
+echo -e "\033[40;31m[RO:BIT] installing git\033[0m"
 sudo apt install -y git
 echo ""
 echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] adding alias"
+echo -e "\033[40;31m[RO:BIT] adding alias\033[0m"
 sh -c "echo \"alias eb='nano ~/.bashrc'\" >> ~/.bashrc"
 sh -c "echo \"alias sb='source ~/.bashrc'\" >> ~/.bashrc"
 sh -c "echo \"alias gs='git status'\" >> ~/.bashrc"
@@ -76,7 +77,7 @@ echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] installing Dependencies for building packages"
+echo -e "\033[40;31m[RO:BIT] installing Dependencies for building packages\033[0m"
 sudo apt install -y python-rosdep python-rosinstall python-rosinstall-generator python-wstool
 build-essential
 sudo apt install -y python-rosdep
@@ -87,13 +88,13 @@ echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] install complete"
+echo -e "\033[40;31m[RO:BIT] install complete\033[0m"
 echo ""
 echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] making catkin_workspace"
+echo -e "\033[40;31m[RO:BIT] making catkin_workspace\033[0m"
 cd
 mkdir catkin_ws
 cd catkin_ws
@@ -105,7 +106,7 @@ echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] rebooting"
+echo -e "\033[40;31m[RO:BIT] rebooting\033[0m"
 sudo reboot
 exit 0
 
