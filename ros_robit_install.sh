@@ -33,7 +33,7 @@ echo ""
 echo ""
 
 echo "[RO:BIT] updating"
-sudo apt update
+sudo apt update -y
 echo ""
 echo ""
 echo ""
