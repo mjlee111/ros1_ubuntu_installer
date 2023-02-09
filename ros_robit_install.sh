@@ -1,5 +1,4 @@
 echo -e "\033[40;31m[NOTE] ROS_installer_robit_17th_myeungjin\033[0m"
-echo -e "\033[40;31m[NOTE] ROS_installer_robit_17th_myeungjin\033[0m"
 echo ""
 echo ""
 echo ""
