@@ -107,6 +107,9 @@ echo ""
 
 #echo -e "\033[40;31m[RO:BIT] rebooting\033[0m"
 #sudo reboot
+cd 
+rm -rf ros_melodic_install
+
 exit 0
 
 
