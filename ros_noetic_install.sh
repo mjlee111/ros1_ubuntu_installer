@@ -31,6 +31,7 @@ sh -c "echo \"alias gp='git pull'\" >> ~/.bashrc"
 sh -c "echo \"alias cw='cd ~/catkin_ws'\" >> ~/.bashrc"
 sh -c "echo \"alias cs='cd ~/catkin_ws/src'\" >> ~/.bashrc"
 sh -c "echo \"alias cm='cd ~/catkin_ws && catkin_make'\" >> ~/.bashrc"
+sh -c "echo \"alias gb='gedit ~/.bashrc'\" >> ~/.bashrc"
 
 sh -c "echo \"source /opt/ros/noetic/setup.bash\" >> ~/.bashrc"
 sh -c "echo \"source ~/catkin_ws/devel/setup.bash\" >> ~/.bashrc"
