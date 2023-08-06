@@ -39,6 +39,7 @@ sh -c "echo \"source ~/catkin_ws/devel/setup.bash\" >> ~/.bashrc"
 echo -e "\033[40;31m[RO:BIT] installing Dependencies for building packages\033[0m"
 sudo apt install -y sudo apt-get install python3-rosinstall* python3-wstool python3-rosdep build-essential
 sudo apt install -y python3-rosdep
+sudo apt install -y python3-roslaunch
 sudo rosdep init
 sudo rosdep update
 
