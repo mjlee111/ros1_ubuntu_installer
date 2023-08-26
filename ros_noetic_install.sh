@@ -18,7 +18,7 @@ echo -e "\033[40;31m[RO:BIT] installing ROS-noetic-desktop-full\033[0m"
 sudo apt install -y ros-noetic-desktop-full
 
 echo -e "\033[40;31m[RO:BIT] installing dependencies\033[0m"
-sudo apt install -y python-catkin-tools
+sudo apt install -y python3-catkin-tools
 
 echo -e "\033[40;31m[RO:BIT] installing git\033[0m"
 sudo apt install -y git
